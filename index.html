@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+<meta charset='UTF-8'>
+<title>Tráfego do Zero – by Mário</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#020617,#0f172a,#020617);color:white}
+header{padding:40px;text-align:center;background:radial-gradient(circle,#22c55e,#020617)}
+section{padding:30px;max-width:1000px;margin:auto}
+.card{background:#020617;border:1px solid #22c55e55;padding:25px;border-radius:20px;margin-bottom:25px;box-shadow:0 0 25px #22c55e22}
+.card:hover{transform:scale(1.02);transition:0.3s}
+.btn{background:#22c55e;border:none;color:#020617;padding:12px 22px;border-radius:10px;font-weight:bold;cursor:pointer}
+iframe{width:100%;height:360px;border-radius:16px;border:none;margin-top:10px}
+.quiz button{margin:5px}
+.correct{color:#22c55e;font-weight:bold}
+.wrong{color:#ef4444;font-weight:bold}
+</style>
+</head>
+<body>
+<header class="animate__animated animate__fadeInDown">
+<h1>🚀 Tráfego do Zero – by Mário</h1>
+<p>Curso prático de tráfego pago para leigos</p>
+</header>
+<section>
+<div class='card animate__animated animate__fadeInUp'>
+<h2>📚 Módulo 1 – Fundamentos</h2>
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+<div class='quiz'>
+<p>O que é tráfego pago?</p>
+<button class='btn' onclick="check(this,false)">Postar no Instagram</button>
+<button class='btn' onclick="check(this,true)">Anunciar para vender</button>
+<p class='result'></p>
+</div>
+</div>
+<div class='card animate__animated animate__fadeInUp'>
+<h2>📊 Módulo 2 – Plataformas</h2>
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+<p>💡 Curiosidade: O Google Ads movimenta bilhões por dia em anúncios.</p>
+</div>
+<div class='card animate__animated animate__fadeInUp'>
+<h2>🎯 Módulo 3 – Criação de Campanhas</h2>
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+</div>
+<div class='card animate__animated animate__fadeInUp'>
+<h2>📈 Módulo 4 – Métricas</h2>
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+</div>
+<div class='card animate__animated animate__fadeInUp'>
+<h2>🧠 Módulo 5 – Escala</h2>
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+</div>
+<div class='card animate__animated animate__fadeInUp'>
+<h2>🎓 Certificado</h2>
+<p>Após concluir os módulos, você recebe seu certificado digital.</p>
+<button class='btn'>Emitir Certificado</button>
+</div>
+</section>
+<script>
+function check(btn,correct){
+let res=btn.parentElement.querySelector('.result');
+if(correct){res.innerHTML='✔️ Acertou! Você está dominando o tráfego!';res.className='result correct'}
+else{res.innerHTML='❌ Quase! Tente novamente.';res.className='result wrong'}
+}
+</script>
+</body>
+</html>
